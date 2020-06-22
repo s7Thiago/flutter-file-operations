@@ -3,7 +3,7 @@
 <p  align="center">
 
 <img src="https://github.com/s7Thiago/Flutter-EarthQuakeApp/blob/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
-<h2 align="center">Flutter Weather App</h2>
+<h2 align="center">Flutter file I/O example</h2>
 
 <p align="center">A simple app showing how flutter works with files through the <a href="https://pub.dev/packages/path_provider">path_provider lib</a>
 </p>
