@@ -1,10 +1,16 @@
-# flutter_file_operations
+<br/>
 
-A new Flutter project.
+<p  align="center">
 
-## Getting Started
+<img src="https://github.com/s7Thiago/Flutter-EarthQuakeApp/blob/master/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
+<h2 align="center">Flutter Weather App</h2>
 
-This project is a starting point for a Flutter application.
+<p align="center">A simple app showing how flutter works with files through the <a href="https://pub.dev/packages/path_provider">path_provider lib</a>
+</p>
+
+## Getting Started for new Flutter project
+
+This project is maked using the Flutter framekork.
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -14,3 +20,8 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+<p align="center">
+</p>
+</p>
+    <img src="app.gif" height="700"></img>
