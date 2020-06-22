@@ -35,26 +35,29 @@ class _HomeState extends State<Home> {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 30.0),
               child: FlatButton(
-                  color: Colors.green,
-                  onPressed: () {
+                color: Colors.green,
+                onPressed: () {
+                  setState(() {
                     saveData(_fieldDataCoontroller.text);
-                  },
-                  child: Text(
-                    'Save',
-                    style: TextStyle(color: Colors.white),
-                  )),
+                  });
+                },
+                child: Text(
+                  'Save',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
             ),
             FutureBuilder(
               future: readData(),
               builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
-                if (snapshot.hasData)
+                if (snapshot.hasData) {
                   return Text(
                     snapshot.data,
                     style: TextStyle(
                       color: Colors.black,
                     ),
                   );
-                else
+                } else
                   return Text('No file saved');
               },
             )
@@ -66,6 +69,7 @@ class _HomeState extends State<Home> {
 
   Future<String> get _localPath async {
     final directory = await getApplicationDocumentsDirectory();
+    debugPrint('target path => ${directory.path}');
     return directory.path;
   }
 
@@ -78,6 +82,8 @@ class _HomeState extends State<Home> {
   // Write
   Future<File> saveData(String message) async {
     final file = await _localFile;
+
+    debugPrint('Local file path => ${file.path}');
 
     return file.writeAsString(message);
   }
