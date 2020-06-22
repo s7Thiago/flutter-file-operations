@@ -7,6 +7,7 @@
 
 <p align="center">A simple app showing how flutter works with files through the <a href="https://pub.dev/packages/path_provider">path_provider lib</a>
 </p>
+    <img src="app.gif" height="700"></img>
 
 ## Getting Started for new Flutter project
 
@@ -24,4 +25,3 @@ samples, guidance on mobile development, and a full API reference.
 <p align="center">
 </p>
 </p>
-    <img src="app.gif" height="700"></img>
